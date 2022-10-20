@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo el dinero del Mundo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/billetes-soles.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/TEDM-logo-blanco.png" alt="Logo" class="tm-site-logo" /> <!--LOGO DEL SITIO-->
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title" >Todo el dinero del Mundo</h1>
+								<h6 class="tm-site-description">¿Y si tuvieras todo el dinero del mundo?</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Inicio</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">Acerca de</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contáctanos</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Bienvenido a Todo el dinero del mundo, el juego.</h2>
+				<p class="col-12 text-center">El juego consiste en gastar todo el dinero del mundo (cifra sacada del PIB de todos los países en el 2020) en cualquier cosa que tu quieras. Los ítems están ordenados del menor al mayor precio. Si quieres deshacer una compra, puedes venderlo al mismo precio. ¡Inténtalo tú! </p>
+			</header>
+			     
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">General</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Servicios</a></li> <!--viajes, cuentas, premium, netflix-->
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Propiedades</a></li><!--compañias, terrenos, naves, etc.-->
+					</ul>
+					
+				</nav>
+			</div>
+            <p id="tm-pagging-money" onclick="dineroRestante()">s/ 370 000 000 000 000.00</p>
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- --------------------------------------------gallery page 1 -------------------------------------------------------------- -->
+				<div id="tm-gallery-page-general" class="tm-gallery-page"> <!--AQUI SE CAMBIA EL NOMBRE DE LAS SECCIONES-->
+					<!--aqui empieza todo-->
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/chicle.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chicle</h4>
+								<p class="tm-gallery-description">Goma de mascar Boogie de 10 céntimos la unidad. Hay 8 distintos tipos de sabores</p>
+								  <span class="tm-gallery-price">s/ 0.10</span>
+								  <span class="cantidadItems"><strong id="cantidad-chicle">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(chicle)">Comprar</button>
+							     <button id="botonVender" onclick="vender(chicle)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/galleta.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Chips Ahoy!</h4>
+								<p class="tm-gallery-description">Galletas con pequeños trozos de chocolate. Contiene 4 galletas por unidad. </p>
+								<span class="tm-gallery-price">s/ 1.00</span>
+								<span class="cantidadItems"><strong id="cantidad-chipsAhoy">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(chipsAhoy)">Comprar</button>
+							     <button id="botonVender" onclick="vender(chipsAhoy)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/mouse.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Mouse Gamer</h4>
+								<p class="tm-gallery-description">Mouse Gamer Griffin M607 7200 DPI Alto: 4cm Ancho: 8.1cm Largo de cable: 1.8m</p>
+								<span class="tm-gallery-price">s/ 99.00</span>
+								<span class="cantidadItems"><strong id="cantidad-mouseGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(mouseGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(mouseGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/camara.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Camara web Logitech</h4>
+								<p class="tm-gallery-description">Cámara web Logitech B2B Pro Brio 4k Largo: 10.2cm Alto: 3.6cm Ancho: 6.3cm</p>
+								<span class="tm-gallery-price">s/ 715.00</span>
+								<span class="cantidadItems"><strong id="cantidad-camaraWeb">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(camaraWeb)">Comprar</button>
+							     <button id="botonVender" onclick="vender(camaraWeb)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/audifonos.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Audifonos Gamer G733</h4>
+								<p class="tm-gallery-description">Audífonos Gaming G733 Lightspeed White, compatible con PS4, PS5, PC y Xbox</p>
+								<span class="tm-gallery-price">s/ 719.90</span>
+								<span class="cantidadItems"><strong id="cantidad-audifonoGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(audifonoGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(audifonoGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/monitor.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Monitor Curvo Gaming</h4>
+								<p class="tm-gallery-description">Monitor AOC AG353UCG Curvo Gaming 35" Wqhd 200hz. 2ms. 2 Hdmi.Dp.4 Usb.G-Sync Ultimate</p>
+								<span class="tm-gallery-price">$s/ 799.00</span>
+								<span class="cantidadItems"><strong id="cantidad-monitor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(monitor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(monitor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/silla.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Silla Gamer Ergonómica</h4>
+								<p class="tm-gallery-description">Silla Gamer Ergonomica Sintética Enkore By Micronics Gc1000 Stratos Red </p>
+								<span class="tm-gallery-price">s/ 799.00</span>
+								<span class="cantidadItems"><strong id="cantidad-sillaGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(sillaGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(sillaGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/teclado.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Teclado Mecánico G915</h4>
+								<p class="tm-gallery-description">Teclado Mecánico gaming, RGB Lightsync, Lightspeed, Pad numérico y bluetooth.</p>
+								<span class="tm-gallery-price">s/ 1 039.90</span>
+								<span class="cantidadItems"><strong id="cantidad-tecladoGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(tecladoGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(tecladoGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tablet.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption></figcaption>
+								<h4 class="tm-gallery-title">iPad Pro 12.9</h4>
+								<p class="tm-gallery-description">iPad Pro 12.9", WIFI y Bluetooth, 128GB, CHIP M1, 2732 x 2048 a 264 px.</p>
+								<span class="tm-gallery-price">s/ 5 799.00</span>
+								<span class="cantidadItems"><strong id="cantidad-tablet">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(tablet)">Comprar</button>
+							     <button id="botonVender" onclick="vender(tablet)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/celular.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Apple iPhone 12 Pro Max</h4>
+								<p class="tm-gallery-description">Apple iPhone 12 Pro Max 6.7" 128GB Graphi IPX8 (Protegido contra inmersión)</p>
+								<span class="tm-gallery-price">s/ 6 299.00</span>
+								<span class="cantidadItems"><strong id="cantidad-celular">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(celular)">Comprar</button>
+							     <button id="botonVender" onclick="vender(celular)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/ps5.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">PS5 + COD BlackOpsCold</h4>
+								<p class="tm-gallery-description">Consola Ps5 Con Lector De Discos + Audifono Pulse 3D PS5 + Call of Duty Black Ops Cold War</p>
+								<span class="tm-gallery-price">s/ 7 456.00</span>
+								<span class="cantidadItems"><strong id="cantidad-ps5">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(ps5)">Comprar</button>
+							     <button id="botonVender" onclick="vender(ps5)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/pcGamer.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">PC Gamer Vastec H.F.</h4>
+								<p class="tm-gallery-description">Vastec HERO Intel Core i9-11900K - 5.30GHz. RAM 32GB RGB DDR4, Almace. 1TB SSD, RTX 3070 8GB</p>
+								<span class="tm-gallery-price">s/ 13 729</span>
+								<span class="cantidadItems"><strong id="cantidad-pcGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(pcGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(pcGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/laptop.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Laptop Alienware Area</h4>
+								<p class="tm-gallery-description">DELL, Core i9 32GB 1TB + 256GB NVIDIA GeForce RTX 2080, 17.5', Octa Core, 5 GHz</p>
+								<span class="tm-gallery-price">s/ 23 999</span>
+								<span class="cantidadItems"><strong id="cantidad-laptopGamer">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(laptopGamer)">Comprar</button>
+							     <button id="botonVender" onclick="vender(laptopGamer)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tele.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sony Smart TV 85' 8k </h4>
+								<p class="tm-gallery-description">SONY TELVISOR 85' 8K SMART TV ANDROID XBR-85Z8H NEGRO, Resolución: 7680 x 4320</p>
+								<span class="tm-gallery-price">s/ 36 599</span>
+								<span class="cantidadItems"><strong id="cantidad-televisor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+
+
+
+
+
+
+					<!-- parte 2 -->
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/nevera.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Meneghini La Cambusa</h4>
+								<p class="tm-gallery-description">La nevera mas cara del mundo, pantalla plana de TV; máquina de café, hielo, etc.</p>
+								<span class="tm-gallery-price">s/ 153 750</span>
+								<span class="cantidadItems"><strong id="cantidad-nevera">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(nevera)">Comprar</button>
+							     <button id="botonVender" onclick="vender(nevera)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/nike.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Nike Air Mag </h4>
+								<p class="tm-gallery-description">Zapatillas Nike inspiradas en la segunda entrega de la saga de <em>Regreso al Futuro</em></p>
+								<span class="tm-gallery-price">s/ 176 015</span>
+								<span class="cantidadItems"><strong id="cantidad-nike">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(nike)">Comprar</button>
+							     <button id="botonVender" onclick="vender(nike)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/laptopCaro.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Luvaglio 1 Million Dollar</h4>
+								<p class="tm-gallery-description">Computadora portatil más cara del mundo, con diamantes incrustados.</p>
+								<span class="tm-gallery-price">s/ 3 750 000</span>
+								<span class="cantidadItems"><strong id="cantidad-laptopCaro">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(laptopCaro)">Comprar</button>
+							     <button id="botonVender" onclick="vender(laptopCaro)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/teleCaro.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Televisor más caro</h4>
+								<p class="tm-gallery-description">Stuart Hughes Prestige HD Supreme Rose Edition cubierto de oro y otras piedras preciosas.</p>
+								<span class="tm-gallery-price">s/ 8 475 000</span>
+								<span class="cantidadItems"><strong id="cantidad-televisorCaro">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisorCaro)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisorCaro)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tele.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sony Smart TV 85' 8k </h4>
+								<p class="tm-gallery-description">SONY TELVISOR 85' 8K SMART TV ANDROID XBR-85Z8H NEGRO, Resolución: 7680 x 4320</p>
+								<span class="tm-gallery-price">s/ 36 599</span>
+								<span class="cantidadItems"><strong id="cantidad-televisor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tele.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sony Smart TV 85' 8k </h4>
+								<p class="tm-gallery-description">SONY TELVISOR 85' 8K SMART TV ANDROID XBR-85Z8H NEGRO, Resolución: 7680 x 4320</p>
+								<span class="tm-gallery-price">s/ 36 599</span>
+								<span class="cantidadItems"><strong id="cantidad-televisor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tele.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sony Smart TV 85' 8k </h4>
+								<p class="tm-gallery-description">SONY TELVISOR 85' 8K SMART TV ANDROID XBR-85Z8H NEGRO, Resolución: 7680 x 4320</p>
+								<span class="tm-gallery-price">s/ 36 599</span>
+								<span class="cantidadItems"><strong id="cantidad-televisor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/tele.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Sony Smart TV 85' 8k </h4>
+								<p class="tm-gallery-description">SONY TELVISOR 85' 8K SMART TV ANDROID XBR-85Z8H NEGRO, Resolución: 7680 x 4320</p>
+								<span class="tm-gallery-price">s/ 36 599</span>
+								<span class="cantidadItems"><strong id="cantidad-televisor">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(televisor)">Comprar</button>
+							     <button id="botonVender" onclick="vender(televisor)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+                    
+
+					
+				</div> <!-- ------------------------------------------- SECCION 2 ----------------------------------------------------------- -->
+				
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-servicios" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/googlePlayPass.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Google Play Pass</h4>
+								<p class="tm-gallery-description">Un mes de Google Play Pass. Tu pase a cientos de juegos y apps increíbles, sin anuncios ni compras dentro de las aplicaciones.</p>
+								<span class="tm-gallery-price">s/ 8.90</span>
+								<span class="cantidadItems"><strong id="cantidad-googlePlayPass">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(googlePlayPass)">Comprar</button>
+							     <button id="botonVender" onclick="vender(googlePlayPass)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/primeVideo.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Amazon Prime Video</h4>
+								<p class="tm-gallery-description">Un mes de Amazon Prime Video. Disfruta de Amazon Originals, además de películas y series populares. ¡Disfruta ahora!</p>
+								<span class="tm-gallery-price">s/ 16.90</span>
+								<span class="cantidadItems"><strong id="cantidad-primeVideo">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(primeVideo)">Comprar</button>
+							     <button id="botonVender" onclick="vender(primeVideo)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/youtubePremium.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">YouTube Premium</h4>
+								<p class="tm-gallery-description">Un mes de YouTube Premium. YouTube y YouTube Music sin anuncios, sin conexión y en segundo plano. </p>
+								<span class="tm-gallery-price">s/ 20.90</span>
+								<span class="cantidadItems"><strong id="cantidad-youtubePremium">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(youtubePremium)">Comprar</button>
+							     <button id="botonVender" onclick="vender(youtubePremium)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/primeGaming.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Prime Gaming</h4>
+								<p class="tm-gallery-description">Un mes de Prime Gaming. Todos los meses, obtén botín para juegos, juegos gratuitos, una suscripción gratuita en Twitch.tv.</p>
+								<span class="tm-gallery-price">s/ 24.50</span>
+								<span class="cantidadItems"><strong id="cantidad-primeGaming">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(primeGaming)">Comprar</button>
+							     <button id="botonVender" onclick="vender(primeGaming)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/disneyPlus.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Disney+</h4>
+								<p class="tm-gallery-description">Un mes de Disney+. Lo mejor de Disney, Pixar, Marvel, Star Wars y National Geographic. ¡Disfruta ahora en 4k!</p>
+								<span class="tm-gallery-price">s/ 25.90</span>
+								<span class="cantidadItems"><strong id="cantidad-disneyPlus">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(disneyPlus)">Comprar</button>
+							     <button id="botonVender" onclick="vender(disneyPlus)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/spotifyPremium.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Spotify Premium</h4>
+								<p class="tm-gallery-description">Un mes de Spotify Premium plan Familiar. Reproduce millones de canciones sin anuncios, sin conexión y on-demand.</p>
+								<span class="tm-gallery-price">s/ 29.90</span>
+								<span class="cantidadItems"><strong id="cantidad-spotifyPremium">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(spotifyPremium)">Comprar</button>
+							     <button id="botonVender" onclick="vender(spotifyPremium)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/hboMax.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">HBO Max</h4>
+								<p class="tm-gallery-description">Un mes de HBO Max, la plataforma de streaming de HBO para ver las mejores peliculas, series y todos los nuevos de Max Originals.</p>
+								<span class="tm-gallery-price">s/ 29.90</span>
+								<span class="cantidadItems"><strong id="cantidad-hboMax">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(hboMax)">Comprar</button>
+							     <button id="botonVender" onclick="vender(hboMax)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/starPlus.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Star+</h4>
+								<p class="tm-gallery-description">Un mes de Star+. Disfruta de todos los episodios de los Simpson, deportes en vivo de ESPN y mucho más.</p>
+								<span class="tm-gallery-price">s/ 37.90</span>
+								<span class="cantidadItems"><strong id="cantidad-starPlus">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(starPlus)">Comprar</button>
+							     <button id="botonVender" onclick="vender(starPlus)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/discordNitro.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Discord Nitro</h4>
+								<p class="tm-gallery-description">Un mes de Discord Nitro. Emojis y avatares animados, etiqueta personalizada, 2 Boosts de Servidor y mucho más.</p>
+								<span class="tm-gallery-price">s/ 40.90</span>
+								<span class="cantidadItems"><strong id="cantidad-discordNitro">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(discordNitro)">Comprar</button>
+							     <button id="botonVender" onclick="vender(discordNitro)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/seccion2/netflix.png" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Netflix</h4>
+								<p class="tm-gallery-description">Un mes de Netflix Premium. Películas, series, ánimes, documentales y otros contenidos ilimitados en ultra HD. </p>
+								<span class="tm-gallery-price">s/ 44.90</span>
+								<span class="cantidadItems"><strong id="cantidad-netflixFamiliar">x0</strong></span>
+								<div class="comprarOVender">
+								 <button id="botonComprar" onclick = "comprar(netflixFamiliar)">Comprar</button>
+							     <button id="botonVender" onclick="vender(netflixFamiliar)">‎      ‎  ‏‏‎Vender‎        ‏‏‎</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+				
+				<!-- ------------------------------------------------- SECCION 3 ---------------------------------------------- -->
+				<div id="tm-gallery-page-propiedades" class="tm-gallery-page hidden">
+					<img src="/img/gallery/seccion3/keepCalm.png" alt="">
+					<!-- <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/08.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Noodle One</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$12.50</span>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/07.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Noodle Second</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$15.50</span>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/06.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Third Soft Noodle</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$20.50</span>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/05.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Aliquam sagittis</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$30.25</span>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Maecenas eget justo</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$35.50</span>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Quisque et felis eros</h4>
+								<p class="tm-gallery-description">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								<span class="tm-gallery-price">$40.50</span>
+							</figcaption>
+						</figure>
+					</article> -->
+   
+				</div> <!-- gallery page 3 -->
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/billetes-dolares.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">¿Todo el dinero del mundo?</h4>
+							<p class="tm-mb-45">La cifra de todo el dinero del mundo es un aproximado de 90 billones de dólares estadounidenses, pero si lo convertimos a soles (moneda peruana) sería un aproximado de s/ 370 000 000 000 000.00.</p>
+							<a href="about.html" class="tm-btn tm-btn-default tm-right">Leer más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2021 TODO EL DINERO DEL MUNDO </p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/decimal.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+
+
+		//comprar items
+        var contadorDinero = document.getElementById("tm-pagging-money");
+		var dineroTotal = new Decimal(370000000000000.0);
+        //-------------------------------------------variables---------------------------------------------
+		//secccion 1
+		if(true){
+
+		  var itemDePrueba = {
+			  nombre: "itemDePrueba",
+			  precio: new Decimal(0).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var chicle = {
+			  nombre: "chicle",
+			  precio: new Decimal(0.1).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var chipsAhoy = {
+			  nombre: "chipsAhoy",
+			  precio: new Decimal(1).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var mouseGamer = {
+			  nombre: "mouseGamer",
+			  precio: new Decimal(99).toNumber(),
+			  cantidad: 0,
+			  max: false
+		    }
+			var camaraWeb = {
+			  nombre: "camaraWeb",
+			  precio: new Decimal(715).toNumber(),
+			  cantidad: 0,
+			  max: false
+		    }
+			var audifonoGamer = {
+			  nombre: "audifonoGamer",
+			  precio: new Decimal(719.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var monitor = {
+			  nombre: "monitor",
+			  precio: new Decimal(799).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var sillaGamer = {
+			  nombre: "sillaGamer",
+			  precio: new Decimal(799).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var tecladoGamer = {
+			  nombre: "tecladoGamer",
+			  precio: new Decimal(1039.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var tablet = {
+			  nombre: "tablet",
+			  precio: new Decimal(5799).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var celular = {
+			  nombre: "celular",
+			  precio: new Decimal(6299).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var ps5 = {
+			  nombre: "ps5",
+			  precio: new Decimal(7456).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var pcGamer = {
+			  nombre: "pcGamer",
+			  precio: new Decimal(13729).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var laptopGamer = {
+			  nombre: "laptopGamer",
+			  precio: new Decimal(23999).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var televisor = {
+			  nombre: "televisor",
+			  precio: new Decimal(36599).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  //2/3/22
+		  var nevera = {
+			  nombre: "nevera",
+			  precio: new Decimal(153750).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var televisorCaro = {
+			  nombre: "televisorCaro",
+			  precio: new Decimal(8475000).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  var laptopCaro= {
+			  nombre: "laptopCaro",
+			  precio: new Decimal(3750000).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+
+		  // 4/6/22
+
+		  var nike = {
+	 	  nombre: "nike",
+	 	  precio: new Decimal(176015.0).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		  }
+		  var tesla = {
+	 	  nombre: "tesla",
+	 	  precio: new Decimal(437808.0).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		  }
+		  var lamborgini  = {
+	 	  nombre: "lamborgini",
+	 	  precio: new Decimal(1775248.2).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		  }
+		  var tanque = {
+	 	  nombre: "tanque",
+	 	  precio: new Decimal(8540918.90).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		  }
+		  var submarino  = {
+	 	  nombre: "submarino ",
+	 	  precio: new Decimal(10026296.10).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		  }
+		  var superYate = {
+	 	  nombre: "superYate",
+	 	  precio: new Decimal(35277708.50).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		}
+		var bunker = {
+	 	  nombre: "bunker",
+	 	  precio: new Decimal(35658336.4).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		}
+
+		  //xd
+		  /*var chipsAhoy = {
+			  nombre: "chipsAhoy",
+			  precio: new Decimal(1).toNumber(),
+			  cantidad: 0,
+			  max: false
+		  }
+		  */
+
+
+
+
+		}
+        //seccion 2
+		if(true){
+			var googlePlayPass = {
+			  nombre: "googlePlayPass",
+			  precio: new Decimal(8.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		    } 
+			var primeVideo = {
+			  nombre: "primeVideo",
+			  precio: new Decimal(16.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var youtubePremium = {
+			  nombre: "youtubePremium",
+			  precio: new Decimal(20.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var primeGaming = {
+			  nombre: "primeGaming",
+			  precio: new Decimal(24.5).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var disneyPlus = {
+			  nombre: "disneyPlus",
+			  precio: new Decimal(25.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var spotifyPremium = {
+			  nombre: "spotifyPremium",
+			  precio: new Decimal(29.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var hboMax = {
+			  nombre: "hboMax",
+			  precio: new Decimal(29.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var starPlus = {
+			  nombre: "starPlus",
+			  precio: new Decimal(37.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var discordNitro = {
+			  nombre: "discordNitro",
+			  precio: new Decimal(40.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   var netflixFamiliar = {
+			  nombre: "netflixFamiliar",
+			  precio: new Decimal(44.9).toNumber(),
+			  cantidad: 0,
+			  max: false
+		   }
+		   // 4/6/22
+		   var windowsPro = {
+	 	  nombre: "windowsPro",
+	 	  precio: new Decimal(999.99).toNumber(),
+	 	  cantidad: 0,
+	 	  max: false
+		}
+		    
+		}
+
+		//seccion 3
+		if (true) {
+			//4/6/22
+		  var islaFlorida = {
+	 	  nombre: "islaFlorida",
+	 	  precio: new Decimal(19902197.7).toNumber(),
+	 	  cantidad: 0,
+	 	  max: 1
+		}
+		
+		var islaMasCara = {
+	 	  nombre: "islaMasCara",
+	 	  precio: new Decimal(278508225).toNumber(),
+	 	  cantidad: 0,
+	 	  max: 1
+		}
+		var realMadrid = {
+	 	  nombre: "realMadrid",
+	 	  precio: new Decimal(2766515035).toNumber(),
+	 	  cantidad: 0,
+	 	  max: 1
+		}
+		var barca = {
+	 	  nombre: "barca",
+	 	  precio: new Decimal(3056163589).toNumber(),
+	 	  cantidad: 0,
+	 	  max: 1
+		}
+		
+
+		
+			
+ 
+		}
+		
+		//var numero = new Decimal(10.5).toNumber();
+
+        //---------------------------------------------COMPRAR-----------------------------------------------
+		var alertCounter = 0;
+		function comprar(item){
+		  if(dineroTotal >= item.precio){
+			if(!item.max || item.cantidad < item.max){  		
+			  item.cantidad += 1;
+			  document.getElementById(`cantidad-${item.nombre}`).innerHTML = `x${item.cantidad}`;
+              dineroTotal = dineroTotal.minus(item.precio); 
+			  dineroFinal = ""; //no le pongas VAR
+			  formatoDeCifras();
+			
+			  contadorDinero.innerHTML = `s/ ${dineroFinal}`;
+			  if(item.cantidad == item.max){
+				document.getElementById("botonComprar").innerHTML = "MÁXIMO";
+			  }
+		    } else{
+				alertCounter += 1;
+			    if(alertCounter >= 3){
+					alert("Ya has comprado la cantidad máxima de este item.");
+					alertCounter = 0;
+				}
+				
+					
+				
+			}
+		  } else{
+			  alert(`¡Increible! Ya no tienes dinero. \nTe falta s/${dineroTotal.minus(item.precio).toString().slice(1)} para comprar este item. \n¡Puedes vender items para tener más dinero!`);
+		  }
+		}
+
+		//------------------------------------------------VENDER-----------------------------------:4
+		var venderCounter = 0;
+		 function vender(item){
+		  if(item.cantidad > 0){
+            item.cantidad -= 1;
+		    document.getElementById(`cantidad-${item.nombre}`).innerHTML = `x${item.cantidad}`;
+		    dineroTotal = dineroTotal.plus(item.precio);
+			dineroFinal = ""; //no le pongas VAR
+            formatoDeCifras();
+		    contadorDinero.innerHTML = `s/ ${dineroFinal}`;
+			if(item.cantidad < item.max){
+				document.getElementById("botonComprar").innerHTML = "Comprar";
+
+			}
+		  } else{
+			 venderCounter += 1;
+			 if(venderCounter > 9){
+				 venderCounter = 0;
+                 alert(`Primero debes comprar este item para venderlo.`);
+			    }
+		    }
+		 }
+
+		
+        //------------------------------------Dinero Restante-----------------------
+		var enPorcentaje = false;
+		var dineroGastado;
+		function dineroRestante(){
+			
+            if(enPorcentaje == false){
+				
+			    //console.log(dineroFinal2);
+		     	var dineroInicial = new Decimal(370000000000000);
+			    dineroGastado = new Decimal(dineroInicial.minus(dineroTotal));
+				
+			    //console.log(`${cienxd} - ${dineroFinal2} = ${porcentaje}`);
+				dineroFinal3 = "";
+				formatoDeCifras2();
+
+				document.getElementById("tm-pagging-money").innerHTML = `- s/ ${dineroFinal3}`;
+				enPorcentaje = true;
+			} else{
+				dineroFinal = "";
+				formatoDeCifras();
+                document.getElementById("tm-pagging-money").innerHTML = `s/ ${dineroFinal}`;
+				
+			}
+            
+		}
+        //--------------------------------------------Formato Cifras-------------------------------:
+		 function formatoDeCifras(){
+          //sepadaror de cifras de 3 en 3:
+			dineroTotal_comas = dineroTotal.toNumber().toLocaleString("es-mx").split(","); //123456 => 123,456 => ["123", "456"]		
+            
+			for(var i = 0; i < dineroTotal_comas.length; i++){ //["123", "456"] => "123 456"
+              dineroFinal += `${dineroTotal_comas[i]} `
+			}
+			dineroFinal = dineroFinal.slice(0, dineroFinal.length - 1); //para q no haya espacio al final
+
+			if(dineroFinal[dineroFinal.length - 2] != "."){ //123 => 123.00
+			
+              dineroFinal = `${dineroFinal}.00`
+			}
+
+			if(dineroFinal[dineroFinal.length - 3] != "."){ //123.4 => 123.40
+              dineroFinal = `${dineroFinal}0`;
+			}
+			enPorcentaje = false;
+		}
+
+		//----------------------------------Formato Cifras 2 ------------------------------------------
+		function formatoDeCifras2(){ //para el dinero restante :c
+          //sepadaror de cifras de 3 en 3:
+			dineroTotal_comas = dineroGastado.toNumber().toLocaleString("es-mx").split(","); //123456 => 123,456 => ["123", "456"]		
+            
+			for(var i = 0; i < dineroTotal_comas.length; i++){ //["123", "456"] => "123 456"
+              dineroFinal3 += `${dineroTotal_comas[i]} `
+			}
+			dineroFinal3 = dineroFinal3.slice(0, dineroFinal3.length - 1); //para q no haya espacio al final
+
+			if(dineroFinal3[dineroFinal3.length - 2] != "."){ //123 => 123.00
+			
+              dineroFinal3 = `${dineroFinal3}.00`
+			}
+
+			if(dineroFinal3[dineroFinal3.length - 3] != "."){ //123.4 => 123.40
+              dineroFinal3 = `${dineroFinal3}0`;
+			}
+			enPorcentaje = true;
+		}
+       
+		
+       //--cosas por hacer:
+       
+       //QUITAR LA PARTE DE LOS 3 ICONOS CON TEXTO EN ABOUT.HTML (ponerlo como comentario)
+
+	   //Terminar la pagina de ACERCA DE
+	      //traducir la pagina y el formato
+	      //agregar a magnates como bill gates y elon musk como mis trabajadores
+		 //explicar el proceso de conversion de dolares a soles y la cifra de todo el dinero del mundo(poner la fuente: https://www.saberespractico.com/economia/cuanto-dinero-hay-en-el-mundo-2020/)
+	   
+	   //Terminar la pagina de Contactanos
+	      //traducir la pagina y el formato
+	      //poner contactos falsos
+	   
+
+	  
+	   
+
+
+	   
+
+	</script>
+</body>
+</html>
